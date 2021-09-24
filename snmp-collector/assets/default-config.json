@@ -1,0 +1,19 @@
+{
+    "logger":{
+        "debug":false,
+        "file_path":"./logs/running_log.txt"
+    },
+    "sqlite":{
+        "file_path":"./core/db/snmp_man.db"
+    },
+    "rabbitmq":{
+        "host":"localhost",
+        "port":"5672",
+        "username":"guest",
+        "password":"guest"
+    },
+    "api_server":{
+        "host":"0.0.0.0",
+        "port":"4399"
+    }
+}

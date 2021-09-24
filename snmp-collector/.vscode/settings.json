@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "/home/ic/anaconda3/envs/snmp-py36/bin/python",
+    "python.linting.pylintEnabled": true,
+    "python.linting.lintOnSave": true,
+    // "python.linting.pylintPath": "pylint",
+    "python.linting.enabled": true,
+    "python.formatting.provider": "yapf",
+    // "terminal.integrated.env.windows": {"PYTHONPATH":"${workspaceFolder};${env:PYTHONPATH}"}
+}

@@ -1,0 +1,130 @@
+{
+  "unique_name": "test",
+  "modules": {
+    "collect_data": {
+      "binding_key": "module.c",
+      "routing_keys": [
+        "module.p",
+        "log.c"
+      ],
+      "collect_interval": 5,
+      "snmp_credentials": {
+        "version": "v3",
+        "username": "snmp-user",
+        "auth_protocol": "SHA",
+        "auth_pass": "cclg_snmpv3",
+        "priv_protocol": "AES",
+        "priv_pass": "cclg_snmpv3"
+      },
+      "oids": [
+        {
+          "name": "entPhysicalName",
+          "description": "物理实体名",
+          "oid": "1.3.6.1.2.1.47.1.1.1.1.7.67108867",
+          "operation": "get"
+        },
+        {
+          "name": "hwEntityCpuUsage",
+          "description": "MPUCPU使用率，取值范围：2～100",
+          "oid": "1.3.6.1.4.1.2011.5.25.31.1.1.1.1.5.67108873",
+          "operation": "get"
+        },
+        {
+          "name": "hwEntityMemUsage",
+          "description": "MPU内存使用率，取值范围：0～100",
+          "oid": "1.3.6.1.4.1.2011.5.25.31.1.1.1.1.7.67108873",
+          "operation": "get"
+        },
+        {
+          "name": "hwEntityTemperature",
+          "description": "实体温度",
+          "oid": "1.3.6.1.4.1.2011.5.25.31.1.1.1.1.11.67108873",
+          "operation": "get"
+        },
+        {
+          "oid": "1.3.6.1.4.1.2011.5.25.31.1.1.10.1.7.0.1",
+          "description": "实体风扇状态",
+          "name": "hwEntityFanState",
+          "operation": "walk"
+        },
+        {
+          "oid": "1.3.6.1.2.1.2.2.1.16",
+          "name": "ifOutOctets",
+          "description": "该接口出方向通过的总字节数",
+          "operation": "walk"
+        },
+        {
+          "name": "hwIFExtInputPktRate",
+          "oid": "1.3.6.1.4.1.2011.5.25.41.1.1.1.1.15",
+          "description": "接入方向流量包速率,该速率为64位，hwIFExtInputPktRate显示底32位值,hwIFExtInputHighPktRate显示高32位值。",
+          "operation": "walk"
+        },
+        {
+          "name": "hwIFExtInputHighPktRate",
+          "oid": "1.3.6.1.4.1.2011.5.25.41.1.1.1.1.16",
+          "description": "接入方向流量包速率,该速率为64位，hwIFExtInputPktRate显示底32位值,hwIFExtInputHighPktRate显示高32位值。",
+          "operation": "walk"
+        }
+      ],
+      "agents": [
+        {
+          "ip": "172.16.2.201",
+          "use_default_credentials": false,
+          "credentials": {
+            "username": "snmp-user",
+            "auth_protocol": "SHA",
+            "auth_pass": "cclg_snmpv3",
+            "priv_protocol": "AES",
+            "priv_pass": "cclg_snmpv3"
+          }
+        },
+        {
+          "ip": "172.16.2.202",
+          "use_default_credentials": true
+        },
+        {
+          "ip": "172.16.2.203",
+          "use_default_credentials": true
+        },
+        {
+          "ip": "172.16.2.204",
+          "use_default_credentials": true
+        },
+        {
+          "ip": "172.16.2.205",
+          "use_default_credentials": true
+        },
+        {
+          "ip": "172.16.2.206",
+          "use_default_credentials": true
+        },
+        {
+          "ip": "172.16.2.208",
+          "use_default_credentials": true
+        },
+        {
+          "ip": "172.16.2.209",
+          "use_default_credentials": true
+        },
+        {
+          "ip": "172.16.2.210",
+          "use_default_credentials": true
+        }
+      ]
+    },
+    "parse_data": {
+      "binding_key": "module.p",
+      "routing_keys": [
+        "module.s",
+        "log.p"
+      ],
+      "script": "def parse_data(data):\n    \"\"\"\n    write your own code in the section below.   \n    \"\"\"  \n    print(\"this is parse data in test.\")\n    res = data[\"agent\"]\n    return res"
+    },
+    "save_data": {
+      "binding_key": "module.s",
+      "routing_keys": [
+        "log.s"
+      ]
+    }
+  }
+}
