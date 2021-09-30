@@ -7,6 +7,8 @@ from utils.collection_factory import CollectionFactory
 from utils import publish
 from utils.log import init_logger
 from utils.exception import KeyUniqueException
+from utils.dependency_injection.wiring import provide
+from config.collections_snapshot import CollectionsSnapshot
 import traceback
 
 logger = init_logger(__name__)
@@ -81,6 +83,9 @@ class BlueprintAssemble(Resource):
                 pid_list.append(process.pid)
             CollectionService.init_all(collection, c_pid=pid_list[0], p_pid=pid_list[1], s_pid=pid_list[2])
             c_item = CollectionService.select_by_name(name=unique_name)
+            # 保存当前采集快照
+            snapshot = provide(CollectionsSnapshot)
+            snapshot.append({"name":unique_name,"is_running":False})
             return {"blueprint_id":blueprint_id,"collection":c_item[0]}, 201
         except KeyError as e:
             abort(400, message="key error: %s, please check blueprint." % e)

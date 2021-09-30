@@ -17303,3 +17303,508 @@
 
 2021-09-24 23:58:45,908 - modules.collect_data - ERROR - agent: 172.16.2.210 loss connect.
 2021-09-24 23:58:45,908 - modules.collect_data - ERROR - agent: 172.16.2.210 loss connect.
+2021-09-26 10:24:09,122 - modules - ERROR - 'script'
+2021-09-26 10:24:09,261 - modules - ERROR - 'mongodb'
+2021-09-26 12:37:19,949 - modules.collect_data - ERROR - exec snmpwalk -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.206 1.3.6.1.2.1.2.2.1.16: snmpwalk: Timeout
+
+2021-09-26 12:37:19,949 - modules.collect_data - ERROR - exec snmpwalk -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.206 1.3.6.1.2.1.2.2.1.16: snmpwalk: Timeout
+
+2021-09-26 22:27:26,174 - modules.collect_data - ERROR - exec snmpget -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.206 1.3.6.1.2.1.47.1.1.1.1.7.67108867 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.5.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.7.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.11.67108873: snmpget: Timeout
+
+2021-09-26 22:27:26,174 - modules.collect_data - ERROR - exec snmpget -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.206 1.3.6.1.2.1.47.1.1.1.1.7.67108867 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.5.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.7.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.11.67108873: snmpget: Timeout
+
+2021-09-26 22:27:26,178 - modules.collect_data - ERROR - exec snmpget -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.209 1.3.6.1.2.1.47.1.1.1.1.7.67108867 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.5.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.7.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.11.67108873: snmpget: Timeout
+
+2021-09-26 22:27:26,178 - modules.collect_data - ERROR - exec snmpget -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.209 1.3.6.1.2.1.47.1.1.1.1.7.67108867 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.5.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.7.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.11.67108873: snmpget: Timeout
+
+2021-09-26 22:27:26,211 - modules.collect_data - ERROR - exec snmpwalk -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.202 1.3.6.1.4.1.2011.5.25.31.1.1.10.1.7.0.1: snmpwalk: Timeout
+
+2021-09-26 22:27:26,211 - modules.collect_data - ERROR - exec snmpwalk -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.202 1.3.6.1.4.1.2011.5.25.31.1.1.10.1.7.0.1: snmpwalk: Timeout
+
+2021-09-26 22:27:27,300 - modules.collect_data - ERROR - exec snmpwalk -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.210 1.3.6.1.2.1.2.2.1.16: snmpwalk: Timeout
+
+2021-09-26 22:27:27,300 - modules.collect_data - ERROR - exec snmpwalk -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.210 1.3.6.1.2.1.2.2.1.16: snmpwalk: Timeout
+
+2021-09-26 22:27:30,113 - modules.collect_data - ERROR - exec snmpwalk -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.205 1.3.6.1.4.1.2011.5.25.41.1.1.1.1.15: snmpwalk: Timeout
+
+2021-09-26 22:27:30,113 - modules.collect_data - ERROR - exec snmpwalk -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.205 1.3.6.1.4.1.2011.5.25.41.1.1.1.1.15: snmpwalk: Timeout
+
+2021-09-26 22:30:33,475 - core.api_server.blueprints - ERROR - name 'CollectionsStatus' is not defined
+2021-09-26 22:31:14,013 - modules.collect_data - ERROR - exec snmpwalk -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.206 1.3.6.1.4.1.2011.5.25.41.1.1.1.1.16: snmpwalk: Timeout
+
+2021-09-26 22:31:14,013 - modules.collect_data - ERROR - exec snmpwalk -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.206 1.3.6.1.4.1.2011.5.25.41.1.1.1.1.16: snmpwalk: Timeout
+
+2021-09-26 22:32:53,660 - modules - ERROR - 'script'
+2021-09-26 22:32:53,669 - modules - ERROR - 'mongodb'
+2021-09-26 22:39:41,337 - modules.collect_data - ERROR - exec snmpget -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.203 1.3.6.1.2.1.47.1.1.1.1.7.67108867 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.5.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.7.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.11.67108873: snmpget: Timeout
+
+2021-09-26 22:39:41,337 - modules.collect_data - ERROR - exec snmpget -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.203 1.3.6.1.2.1.47.1.1.1.1.7.67108867 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.5.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.7.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.11.67108873: snmpget: Timeout
+
+2021-09-26 22:39:41,366 - modules.collect_data - ERROR - exec snmpget -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.209 1.3.6.1.2.1.47.1.1.1.1.7.67108867 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.5.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.7.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.11.67108873: snmpget: Timeout
+
+2021-09-26 22:39:41,366 - modules.collect_data - ERROR - exec snmpget -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.209 1.3.6.1.2.1.47.1.1.1.1.7.67108867 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.5.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.7.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.11.67108873: snmpget: Timeout
+
+2021-09-26 22:39:41,387 - modules.collect_data - ERROR - exec snmpwalk -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.204 1.3.6.1.4.1.2011.5.25.31.1.1.10.1.7.0.1: snmpwalk: Timeout
+
+2021-09-26 22:39:41,387 - modules.collect_data - ERROR - exec snmpwalk -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.204 1.3.6.1.4.1.2011.5.25.31.1.1.10.1.7.0.1: snmpwalk: Timeout
+
+2021-09-26 22:39:48,110 - modules.collect_data - ERROR - agent: 172.16.2.203 loss connect.
+2021-09-26 22:39:48,110 - modules.collect_data - ERROR - agent: 172.16.2.203 loss connect.
+2021-09-26 22:39:48,472 - modules.collect_data - ERROR - exec snmpwalk -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.210 1.3.6.1.2.1.2.2.1.16: snmpwalk: Timeout
+
+2021-09-26 22:39:48,472 - modules.collect_data - ERROR - exec snmpwalk -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.210 1.3.6.1.2.1.2.2.1.16: snmpwalk: Timeout
+
+2021-09-26 22:39:50,956 - modules.collect_data - ERROR - exec snmpwalk -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.201 1.3.6.1.4.1.2011.5.25.41.1.1.1.1.16: snmpwalk: Timeout
+
+2021-09-26 22:39:50,956 - modules.collect_data - ERROR - exec snmpwalk -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.201 1.3.6.1.4.1.2011.5.25.41.1.1.1.1.16: snmpwalk: Timeout
+
+2021-09-26 22:39:54,421 - modules.collect_data - ERROR - agent: 172.16.2.209 loss connect.
+2021-09-26 22:39:54,421 - modules.collect_data - ERROR - agent: 172.16.2.209 loss connect.
+2021-09-26 22:41:27,670 - modules.collect_data - ERROR - exec snmpget -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.208 1.3.6.1.2.1.47.1.1.1.1.7.67108867 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.5.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.7.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.11.67108873: snmpget: Timeout
+
+2021-09-26 22:41:27,670 - modules.collect_data - ERROR - exec snmpget -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.208 1.3.6.1.2.1.47.1.1.1.1.7.67108867 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.5.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.7.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.11.67108873: snmpget: Timeout
+
+2021-09-26 22:41:36,210 - modules.collect_data - ERROR - agent: 172.16.2.208 loss connect.
+2021-09-26 22:41:36,210 - modules.collect_data - ERROR - agent: 172.16.2.208 loss connect.
+2021-09-26 22:49:39,747 - modules.collect_data - ERROR - exec snmpwalk -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.209 1.3.6.1.4.1.2011.5.25.41.1.1.1.1.16: snmpwalk: Timeout
+
+2021-09-26 22:49:39,747 - modules.collect_data - ERROR - exec snmpwalk -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.209 1.3.6.1.4.1.2011.5.25.41.1.1.1.1.16: snmpwalk: Timeout
+
+2021-09-26 22:49:42,636 - modules.collect_data - ERROR - exec snmpget -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.202 1.3.6.1.2.1.47.1.1.1.1.7.67108867 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.5.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.7.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.11.67108873: snmpget: Timeout
+
+2021-09-26 22:49:42,636 - modules.collect_data - ERROR - exec snmpget -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.202 1.3.6.1.2.1.47.1.1.1.1.7.67108867 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.5.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.7.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.11.67108873: snmpget: Timeout
+
+2021-09-26 22:49:42,654 - modules.collect_data - ERROR - exec snmpget -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.210 1.3.6.1.2.1.47.1.1.1.1.7.67108867 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.5.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.7.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.11.67108873: snmpget: Timeout
+
+2021-09-26 22:49:42,654 - modules.collect_data - ERROR - exec snmpget -v 3 -u snmp-user -l authPriv -a SHA -A cclg_snmpv3 -x AES -X cclg_snmpv3 172.16.2.210 1.3.6.1.2.1.47.1.1.1.1.7.67108867 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.5.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.7.67108873 1.3.6.1.4.1.2011.5.25.31.1.1.1.1.11.67108873: snmpget: Timeout
+
+2021-09-26 22:49:58,106 - modules - ERROR - 'script'
+2021-09-26 22:49:58,107 - modules - ERROR - 'mongodb'
+2021-09-26 22:50:00,025 - modules - ERROR - 'script'
+2021-09-26 22:50:00,027 - modules - ERROR - 'mongodb'
+2021-09-26 23:49:45,012 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:49:45,021 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:49:45,028 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:50:35,513 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:50:43,643 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:50:43,651 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:50:43,657 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:50:43,665 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:50:43,673 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:50:43,680 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:50:43,687 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:03,770 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:03,777 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:03,783 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:03,789 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:03,795 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:03,801 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:03,808 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:03,814 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:03,820 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:03,827 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:03,833 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:03,839 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:03,845 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:03,851 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,767 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,774 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,780 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,787 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,794 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,801 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,807 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,814 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,821 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,828 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,834 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,841 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,847 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,854 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,860 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,867 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,873 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,879 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,885 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,892 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,898 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,904 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,910 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,916 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,922 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,928 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,934 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:23,941 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,681 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,688 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,695 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,702 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,709 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,715 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,723 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,731 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,737 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,745 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,752 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,760 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,766 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,773 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,779 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,786 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,793 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,800 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,806 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,813 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,819 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,825 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,831 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,837 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,843 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,850 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,856 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,862 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,869 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,875 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,881 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,888 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,894 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,901 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,907 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,914 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,920 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,926 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,933 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,939 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,945 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,951 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,958 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,964 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,970 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,977 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,983 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,990 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:45,996 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:46,003 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:46,009 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:46,017 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:46,024 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:46,031 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:46,037 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:51:46,044 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,688 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,695 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,702 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,708 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,714 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,721 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,727 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,733 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,740 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,746 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,753 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,759 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,765 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,772 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,778 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,784 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,791 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,797 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,804 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,810 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,816 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,823 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,829 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,836 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,842 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,849 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,855 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,862 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,868 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,875 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,881 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,888 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,894 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,901 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,907 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,914 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,920 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,927 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,933 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,940 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,947 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,953 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,960 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,967 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,974 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,980 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,987 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:07,994 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,001 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,008 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,015 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,022 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,028 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,036 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,043 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,050 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,058 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,065 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,073 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,080 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,087 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,113 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,121 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,128 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,136 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,144 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,151 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,159 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,167 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,174 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,182 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,191 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,198 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,206 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,214 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,221 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,229 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,236 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,243 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,249 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,256 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,263 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,271 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,279 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,286 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,292 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,299 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,306 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,312 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,319 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,326 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,333 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,341 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,348 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,355 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,361 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,368 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,374 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,381 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,388 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,394 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,401 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,407 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,414 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,421 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,427 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,434 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,440 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,447 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,454 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,460 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:08,467 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:55,890 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:55,899 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:55,908 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:55,917 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:55,926 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:55,934 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:55,943 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:55,952 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:55,962 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:55,972 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:55,983 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:55,992 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,001 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,011 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,020 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,029 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,037 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,045 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,055 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,065 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,074 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,083 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,093 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,102 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,111 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,120 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,130 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,139 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,148 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,156 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,165 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,174 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,183 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,191 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,200 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,209 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,217 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,226 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,235 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,243 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,251 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,259 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,268 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,276 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,283 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,291 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,299 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,307 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,315 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,322 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,330 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,337 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,345 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,373 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,382 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,390 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,398 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,406 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,414 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,423 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,431 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,439 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,447 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,454 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,462 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,470 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,477 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,485 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,492 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,500 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,507 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,514 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,522 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,529 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,536 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,544 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,551 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,558 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,565 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,573 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,580 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,587 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,595 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,602 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,610 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,617 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,625 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,633 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,642 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,650 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,659 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,667 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,676 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,687 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,696 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,705 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,713 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,722 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,730 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,739 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,748 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,756 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,765 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,773 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,782 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,791 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,798 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,806 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,814 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,821 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,829 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,837 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,845 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,853 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,861 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,869 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,877 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,884 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,892 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,900 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,907 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,915 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,922 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,930 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,937 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,945 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,953 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,960 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,968 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,975 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,982 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,990 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:56,997 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:57,005 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:57,013 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:57,020 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:57,028 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:57,035 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:57,043 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:57,051 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:57,058 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:57,066 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:57,073 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:57,081 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:57,088 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:57,096 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:57,103 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:57,111 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:57,118 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:57,126 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:57,133 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:57,141 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:57,149 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:57,156 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:52:57,164 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:54:12,851 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:54:12,858 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:54:16,696 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:54:16,704 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:54:16,711 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:54:16,717 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:54:41,557 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:54:41,563 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:54:41,569 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:54:41,574 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:54:41,580 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:54:41,586 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:54:41,592 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:54:41,597 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:55:01,589 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:55:01,595 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:55:21,837 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:55:21,843 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:55:21,849 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:55:21,855 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:55:37,371 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:55:37,377 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:55:39,939 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:55:39,945 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:55:39,951 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:55:39,956 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:57:31,098 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:57:31,105 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:57:54,232 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:58:34,742 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:58:55,181 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:59:02,721 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-26 23:59:57,029 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-27 00:00:04,090 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-27 00:00:07,586 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-27 00:00:28,336 - core.api_server.blueprints - ERROR - [Errno 32] Broken pipe
+2021-09-27 00:04:39,536 - core.api_server.collections - ERROR - name 'provide' is not defined
+2021-09-27 00:04:52,408 - core.api_server.collections - ERROR - name 'provide' is not defined
+2021-09-30 14:49:21,725 - modules.save_data - ERROR - There is no current event loop in thread 'ThreadPoolExecutor-2_1'.
+2021-09-30 14:49:21,725 - modules.save_data - ERROR - There is no current event loop in thread 'ThreadPoolExecutor-2_1'.
+2021-09-30 15:03:31,782 - modules.save_data - ERROR - There is no current event loop in thread 'ThreadPoolExecutor-2_1'.
+2021-09-30 15:03:31,782 - modules.save_data - ERROR - There is no current event loop in thread 'ThreadPoolExecutor-2_1'.
+2021-09-30 15:45:27,206 - modules.save_data - ERROR - There is no current event loop in thread 'Thread-2'.
+2021-09-30 15:45:27,206 - modules.save_data - ERROR - There is no current event loop in thread 'Thread-2'.
+2021-09-30 16:02:35,708 - modules.save_data - ERROR - must be str, not int
+2021-09-30 16:02:35,708 - modules.save_data - ERROR - must be str, not int
+2021-09-30 16:02:37,500 - modules.save_data - ERROR - must be str, not int
+2021-09-30 16:02:37,500 - modules.save_data - ERROR - must be str, not int
+2021-09-30 16:02:37,988 - modules.save_data - ERROR - must be str, not int
+2021-09-30 16:02:37,988 - modules.save_data - ERROR - must be str, not int

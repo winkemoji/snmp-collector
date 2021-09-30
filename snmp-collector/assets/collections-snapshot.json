@@ -1,0 +1,72 @@
+{
+    "collections": [
+        {
+            "name": "test",
+            "is_running": true
+        },
+        {
+            "name": "test",
+            "is_running": false
+        },
+        {
+            "name": "test",
+            "is_running": false
+        },
+        {
+            "name": "test",
+            "is_running": false
+        },
+        {
+            "name": "test",
+            "is_running": false
+        },
+        {
+            "name": "test",
+            "is_running": false
+        },
+        {
+            "name": "test",
+            "is_running": false
+        },
+        {
+            "name": "test",
+            "is_running": false
+        },
+        {
+            "name": "test",
+            "is_running": false
+        },
+        {
+            "name": "test",
+            "is_running": false
+        },
+        {
+            "name": "test",
+            "is_running": false
+        },
+        {
+            "name": "test",
+            "is_running": false
+        },
+        {
+            "name": "test",
+            "is_running": false
+        },
+        {
+            "name": "test",
+            "is_running": false
+        },
+        {
+            "name": "test",
+            "is_running": false
+        },
+        {
+            "name": "test",
+            "is_running": false
+        },
+        {
+            "name": "test",
+            "is_running": false
+        }
+    ]
+}

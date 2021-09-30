@@ -1,0 +1,4 @@
+.git
+.vscode
+snmp-collector/logs/*
+superserver_log.txt

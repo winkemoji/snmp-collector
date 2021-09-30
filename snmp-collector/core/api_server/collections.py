@@ -5,6 +5,8 @@ from core.service import CollectionService, CollectDataService
 from core.service.collection_service import Status
 from utils import publish,kill
 from utils.log import init_logger
+from utils.dependency_injection.wiring import provide
+from config.collections_snapshot import CollectionsSnapshot
 
 logger = init_logger(__name__)
 
@@ -32,6 +34,9 @@ class Collection(Resource):
             kill(s_pid)
             CollectionService.delete_collection_by_collection_id(collection_id)
             CollectionService.delete_details_by_pid(c_pid,p_pid,s_pid)
+            #删除采集快照
+            snapShot = provide(CollectionsSnapshot)
+            snapShot.delete(collection['name'])
         except Exception as e:
             traceback.print_exc()
             logger.error(e)
@@ -48,6 +53,9 @@ class CollectionStart(Resource):
             binding_key = collect_data["binding_key"]
             publish(exchange, binding_key, "start")
             CollectionService.update_status(collection_id, Status.start)
+            #更新采集快照
+            snapshot = provide(CollectionsSnapshot)
+            snapshot.update(name=exchange,is_running=True)
             return "collection {} start.".format(exchange), 201
         except Exception as e:
             traceback.print_exc()
@@ -65,6 +73,9 @@ class CollectionStop(Resource):
             binding_key = collect_data["binding_key"]
             publish(exchange, binding_key, "stop")
             CollectionService.update_status(collection_id, Status.stop)
+            #更新采集快照
+            snapshot = provide(CollectionsSnapshot)
+            snapshot.update(name=exchange,is_running=False)
             return "collection {} stop.".format(exchange), 201
         except Exception as e:
             traceback.print_exc()
@@ -82,6 +93,9 @@ class CollectionRestart(Resource):
             binding_key = collect_data["binding_key"]
             publish(exchange, binding_key, "restart")
             CollectionService.update_status(collection_id, Status.start)
+            #更新采集快照
+            snapshot = provide(CollectionsSnapshot)
+            snapshot.update(name=exchange,is_running=True)
             return "collection {} restart.".format(exchange), 201
         except Exception as e:
             traceback.print_exc()

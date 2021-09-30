@@ -5,10 +5,15 @@ import traceback
 import motor.motor_asyncio
 import asyncio
 import datetime
+import time
 import json
 from utils.log import init_logger
+from apscheduler.schedulers.blocking import BlockingScheduler
+import threading
 
 logger = init_logger(__name__)
+
+lock = threading.Lock()
 
 class SaveDataModule(ModuleBase, ABC):
     def __init__(self):
@@ -22,6 +27,8 @@ class SaveDataModule(ModuleBase, ABC):
         self._collection = None
         self._loop = None
         self.collection_name = ""
+        self.connection = ""
+        self.start_date = ""
 
 
     def init_custom_variables(self):
@@ -32,15 +39,34 @@ class SaveDataModule(ModuleBase, ABC):
         self.username = mongodb['username']
         self.password = mongodb['password']
         self.database = mongodb['database']
-        self.collection_name = str(datetime.date.today())
+
+        self.connection = self.init_connection()
+        self.start_date = datetime.date.today()
+        self.set_collection()
+    
+    def init_connection(self):
         self._init_event_loop()
-        self._collection = self._connect_and_getting_database()[self.collection_name]
+        return self._connect_and_getting_database()
+    
+    def set_collection(self):
+        lock.acquire()
+        try:
+            self.collection_name = str(datetime.date.today())
+            self._collection = self.connection[self.collection_name]
+        finally:
+            lock.release()
+
+    def reset_collection(self):
+        current_date = datetime.date.today()
+        if current_date.day != self.start_date.day:
+            self.set_collection()
+            self.start_date = current_date
     
     def binding_callback(self, ch, method, properties, body):
         try:
+            self.reset_collection()
             data = body.decode("utf-8")
             data = json.loads(data)
-            # self.do_insert(({"country": "American111"}, {"country": "Australia12345"}))
             self.do_insert(data)
         except BaseException as e:
             self.emit(traceback.format_exc(), log=True)
@@ -79,7 +105,9 @@ class SaveDataModule(ModuleBase, ABC):
                     documents += [x for x in i]
             if kwargs != {}:
                 documents.append(kwargs)
-            self._loop.run_until_complete(self.__do_insert(documents))
+            # LOCK
+            with lock:
+                self._loop.run_until_complete(self.__do_insert(documents))
         except Exception as e:
             logger.error(e)
 
@@ -103,8 +131,8 @@ class SaveDataModule(ModuleBase, ABC):
 
     async def __do_find(self, query):
         cursor = self._collection.find(query)
-        documents = [document for document in await cursor.to_list(self._length)]
-        logger.info('find %d docs (length AKA batch size: %d)' % (len(documents), self._length,))
+        documents = [document for document in await cursor.to_list(self.length)]
+        logger.info('find %d docs (length AKA batch size: %d)' % (len(documents), self.length,))
         return documents
 
     async def __do_insert(self, documents):
