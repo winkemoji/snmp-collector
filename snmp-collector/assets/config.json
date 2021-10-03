@@ -1,6 +1,6 @@
 {
     "logger": {
-        "debug": false,
+        "debug": true,
         "file_path": "./logs/running_log.txt"
     },
     "sqlite": {

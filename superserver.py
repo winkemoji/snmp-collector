@@ -7,7 +7,7 @@ import json
 from flask_cors import CORS
 from gevent import pywsgi
 import requests
-from apscheduler.schedulers.blocking import BlockingScheduler
+import psutil
 
 app = Flask(__name__)
 # 开启跨域
@@ -36,32 +36,17 @@ def init_logger(name, filename='./superserver_log.txt'):
 
 logger = init_logger(__name__)
 
-
-def kill(pid):
-    # 本函数用于中止传入pid所对应的进程
-    if os.name == 'nt':
-        # Windows系统
-        cmd = 'taskkill /pid ' + str(pid) + ' /f'
-        try:
-            os.system(cmd)
-            print(pid, 'killed')
-        except Exception as e:
-            print(e)
-    elif os.name == 'posix':
-        # Linux系统
-        cmd = 'kill ' + str(pid)
-        try:
-            os.system(cmd)
-            print(pid, 'killed')
-        except Exception as e:
-            print(e)
-    else:
-        print('Undefined os.name')
+def kill_process(pid):
+    parent_proc = psutil.Process(pid)
+    for child_proc in parent_proc.children(recursive=True):
+        child_proc.kill()
+    parent_proc.kill()
 
 def start_snmp_collector():
     try:
         for pid in PIDS:
-            kill(pid)
+            # kill(pid)
+            kill_process(pid)
             PIDS.remove(pid)
         cmd=['python','main.py']
         process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE,cwd="./snmp-collector")
@@ -117,18 +102,10 @@ def update_config():
     return config
 
 
-def initTimedTask():
-    scheduler = BlockingScheduler()
-    # for debug
-    # scheduler.add_job(start_snmp_collector, 'interval', seconds=20)
-    scheduler.add_job(start_snmp_collector, 'cron', hour=0, minute=0)
-    return scheduler
-
 
 if __name__ == '__main__':
     res = start_snmp_collector()
     if res['pid']:
-        # initTimedTask().start()
         # for debug
         # app.run(host='0.0.0.0',port='4400')
         server = pywsgi.WSGIServer(('0.0.0.0',4400),app)

@@ -26,7 +26,6 @@ class SaveDataModule(ModuleBase, ABC):
         self.length = 100
         self._collection = None
         self._loop = None
-        self.collection_name = ""
         self.connection = ""
         self.start_date = ""
 
@@ -42,24 +41,23 @@ class SaveDataModule(ModuleBase, ABC):
 
         self.connection = self.init_connection()
         self.start_date = datetime.date.today()
-        self.set_collection()
+        self.set_collection(str(self.start_date))
     
     def init_connection(self):
         self._init_event_loop()
         return self._connect_and_getting_database()
     
-    def set_collection(self):
+    def set_collection(self,collection_name):
         lock.acquire()
         try:
-            self.collection_name = str(datetime.date.today())
-            self._collection = self.connection[self.collection_name]
+            self._collection = self.connection[collection_name]
         finally:
             lock.release()
 
     def reset_collection(self):
         current_date = datetime.date.today()
         if current_date.day != self.start_date.day:
-            self.set_collection()
+            self.set_collection(str(current_date))
             self.start_date = current_date
     
     def binding_callback(self, ch, method, properties, body):
@@ -82,7 +80,7 @@ class SaveDataModule(ModuleBase, ABC):
     def _connect_and_getting_database(self):
         try:
             conn_url = 'mongodb://{}:{}@{}:{}'.format(self.username, self.password, self.host, self.port)
-            conn_info = 'data stored in {}:{}/{}/{}'.format(self.host, self.port, self.database, self.collection_name)
+            conn_info = 'data stored in {}:{}/{}'.format(self.host, self.port, self.database)
             logger.info(conn_info)
             print(conn_info)
             client = motor.motor_asyncio.AsyncIOMotorClient(conn_url)
