@@ -15,3 +15,4 @@ pyparsing==2.4.7
 pytest==6.2.4
 requests
 tornado
+psutil
