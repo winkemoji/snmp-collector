@@ -62,7 +62,7 @@ docker run -it -d --name sc-control-plane  -e SC_HOST='192.168.230.72'  -p 15674
 
 `Snmp Collector` 只提供基础数据采集功能，如您需要针对其进行二次开发，提供更丰富的功能，可参考api文档。
 
-[SNMP Collector api index.md](https://github.com/winkemoji/snmp-collector/doc/api%20index.md)
+[SNMP Collector api index.md](https://github.com/winkemoji/snmp-collector/blob/master/doc/api%20index.md)
 
 ## 作者 
 
