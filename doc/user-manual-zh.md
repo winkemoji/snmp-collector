@@ -66,7 +66,7 @@ docker run -it -d --name sc-control-plane  -e SC_HOST='192.168.230.72'  -p 15674
 
 ## <a name="arc">3 架构</a>
 
-![](/home/winkemoji/下载/snmp-collector架构.png)
+![](img/snmp-collector-arc.png)
 
 <center>图3.1 SNMP Collector系统架构</center>
 
@@ -76,19 +76,20 @@ docker run -it -d --name sc-control-plane  -e SC_HOST='192.168.230.72'  -p 15674
 
 在运行过程中如果`snmp collector`修改了相关配置或服务异常需要重新启动，这时候就需要`superserver`帮忙，对`snmp collector`可进行的操作及对应的接口如表3.1。注意！重启`snmp collector`后原来正在运行的采集都会删除，需手动根据蓝图组装采集并运行。
 
-<center>表3.1 superserver可进行操作与对应接口</center>
+<center>表3.1 superserver可进行操作与对应接口
 
 | 操作               | 接口            |
 | ------------------ | --------------- |
 | 获取,更新配置      | /config         |
 | 获取默认配置       | /default-config |
 | 重启snmp collector | /restart        |
+</center>
 
 ### 3.2 snmp collector engine
 
 `snmp collector engine`对创建的采集进行统一管理，可进行的操作及对应的接口如表3.2。
 
-<center>表3.1 snmp collector engine可进行操作与对应接口</center>
+<center>表3.1 snmp collector engine可进行操作与对应接口
 
 | 操作     | 接口                                     |
 | -------- | ---------------------------------------- |
@@ -96,6 +97,7 @@ docker run -it -d --name sc-control-plane  -e SC_HOST='192.168.230.72'  -p 15674
 | 重启采集 | /api/collections/restart/{collection_id} |
 | 删除采集 | /api/collections/{collection_id}         |
 | 停止采集 | /api/collections/stop/{collection_id}    |
+</center>
 
 ### 3.3 collection
 
@@ -125,7 +127,7 @@ docker run -it -d --name sc-control-plane  -e SC_HOST='192.168.230.72'  -p 15674
 
 打开`SC Control Plane`, 浏览器中访问`http://ip:15674/blueprints`,其中ip为服务器地址，打开界面如图4.1所示。
 
-![](/home/winkemoji/图片/2021-10-06 23-02-17 的屏幕截图.png)
+![](img/shortcut41.png)
 
 <center>图4.1 蓝图界面</center>
 
@@ -135,13 +137,13 @@ docker run -it -d --name sc-control-plane  -e SC_HOST='192.168.230.72'  -p 15674
 
 对应条目下点击**操作**按钮,选择**组装**(如图4.1)，可在采集页面看到刚由蓝图组装的采集（如图4.3）。注意，`binding_key`与`routing_keys`默认不清楚请不要修改，以免监视器无法取到正确的`binding_key`也不建议直接在JSON编辑器中修改，可能会跳过一些校验。
 
-![](/home/winkemoji/图片/2021-10-06 23-24-22 的屏幕截图.png)
+![](img/shortcut42.png)
 
 <center>图4.2 创建蓝图界面</center>
 
 在采集界面下(图4.3)对刚生成的采集点击**操作**按钮,选择**启动**, 如果采集顺利，可以在数据库可视化软件中看到采集信息，见**图A.1**,**图A.2**。
 
-![](/home/winkemoji/图片/2021-10-06 23-33-26 的屏幕截图.png)
+![](img/shortcut43.png)
 
 <center>图4.3 采集界面</center>
 
@@ -155,7 +157,7 @@ cd /snmp-collector/monitor
 python monitor.py [collection_name] [binding_key]...
 ```
 
-<center>表4.1 binding_key 可取值及对应含义</center>
+<center>表4.1 binding_key 可取值及对应含义
 
 | binding_key    | description                            |
 | -------------- | -------------------------------------- |
@@ -169,6 +171,7 @@ python monitor.py [collection_name] [binding_key]...
 | module.# log.# | 监视所有模块数据与日志                 |
 | module.c log.c | 监视collect data module 产生日志与数据 |
 | ...            |                                        |
+</center>
 
 监视器使用举例：
 
@@ -181,7 +184,7 @@ python monitor.py test log.c
 
 监视器正常启动与输出见图4.4。
 
-![](/home/winkemoji/图片/2021-10-07 00-09-33 的屏幕截图.png)
+![](img/shortcut44.png)
 
 <center>图4.4 监视器界面</center>
 
@@ -263,11 +266,11 @@ python monitor.py test log.c
 
 ### 附录2
 
-![](/home/winkemoji/图片/2021-10-06 23-38-43 的屏幕截图.png)
+![](img/shortcuta1.png)
 
 <center>图A.1 采集得到的信息</center>
 
-![](/home/winkemoji/图片/2021-10-06 23-39-42 的屏幕截图.png)
+![](img/shortcuta2.png)
 
 <center>图A.2 采集得到的信息</center>
 

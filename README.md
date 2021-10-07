@@ -56,7 +56,7 @@ docker run -it -d --name sc-control-plane  -e SC_HOST='192.168.230.72'  -p 15674
 
 ## 使用手册 
 
-[Snmp Collector User Manual(Chinese Version).pdf](https://github.com/winkemoji/snmp-collector/doc/user-manual-zh.pdf)
+[Snmp Collector User Manual(Chinese Version).md](https://github.com/winkemoji/snmp-collector/blob/master/doc/user-manual-zh.md)
 
 ## 其他 
 
