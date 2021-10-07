@@ -66,7 +66,9 @@ docker run -it -d --name sc-control-plane  -e SC_HOST='192.168.230.72'  -p 15674
 
 ## <a name="arc">3 架构</a>
 
-![](img/snmp-collector-arc.png)
+
+
+![](https://raw.githubusercontent.com/winkemoji/snmp-collector/master/doc/img/snmp-collector-arc.png)
 
 <center>图3.1 SNMP Collector系统架构</center>
 
@@ -127,7 +129,7 @@ docker run -it -d --name sc-control-plane  -e SC_HOST='192.168.230.72'  -p 15674
 
 打开`SC Control Plane`, 浏览器中访问`http://ip:15674/blueprints`,其中ip为服务器地址，打开界面如图4.1所示。
 
-![](img/shortcut41.png)
+![](https://raw.githubusercontent.com/winkemoji/snmp-collector/master/doc/img/shortcut41.png)
 
 <center>图4.1 蓝图界面</center>
 
@@ -137,13 +139,13 @@ docker run -it -d --name sc-control-plane  -e SC_HOST='192.168.230.72'  -p 15674
 
 对应条目下点击**操作**按钮,选择**组装**(如图4.1)，可在采集页面看到刚由蓝图组装的采集（如图4.3）。注意，`binding_key`与`routing_keys`默认不清楚请不要修改，以免监视器无法取到正确的`binding_key`也不建议直接在JSON编辑器中修改，可能会跳过一些校验。
 
-![](img/shortcut42.png)
+![](https://raw.githubusercontent.com/winkemoji/snmp-collector/master/doc/img/shortcut42.png)
 
 <center>图4.2 创建蓝图界面</center>
 
 在采集界面下(图4.3)对刚生成的采集点击**操作**按钮,选择**启动**, 如果采集顺利，可以在数据库可视化软件中看到采集信息，见**图A.1**,**图A.2**。
 
-![](img/shortcut43.png)
+![](https://raw.githubusercontent.com/winkemoji/snmp-collector/master/doc/img/shortcut43.png)
 
 <center>图4.3 采集界面</center>
 
@@ -184,7 +186,7 @@ python monitor.py test log.c
 
 监视器正常启动与输出见图4.4。
 
-![](img/shortcut44.png)
+![](https://raw.githubusercontent.com/winkemoji/snmp-collector/master/doc/img/shortcut44.png)
 
 <center>图4.4 监视器界面</center>
 
@@ -266,11 +268,11 @@ python monitor.py test log.c
 
 ### 附录2
 
-![](img/shortcuta1.png)
+![](https://raw.githubusercontent.com/winkemoji/snmp-collector/master/doc/img/shortcuta1.png)
 
 <center>图A.1 采集得到的信息</center>
 
-![](img/shortcuta2.png)
+![](https://raw.githubusercontent.com/winkemoji/snmp-collector/master/doc/img/shortcuta2.png)
 
 <center>图A.2 采集得到的信息</center>
 
